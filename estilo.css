@@ -13,6 +13,14 @@ body {
     color: #333;
     padding: 20px;
 }
+section {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e6d4c0; /* tom de marrom bem claro */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 /* Estilos para o container principal */
 #capa {
@@ -62,14 +70,15 @@ h2 {
 /* Estilo para o subtítulo de nível 3 */
 h3 {
     font-size: 1.5rem;
-    color: #014101;
+    color: #337b00;
     margin-top: 20px;
     text-align: center;
 }
 
 /* Estilos para o parágrafo abaixo do subtítulo */
 div > p {
-    font-size: 1.1rem;
+    font-size: larger;
+
     color: #555;
     margin: 20px auto;
     max-width: 900px;
@@ -87,4 +96,32 @@ div img {
     display: inline-block;
     margin: 10px;
     border-radius: 8px;
+}
+/* Estilizando a lista */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    padding: 20px; /* Adiciona preenchimento ao redor da lista */
+    margin: 0;
+    background-color: #ffffff; /* Cor de fundo branca para a lista */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    max-width: 600px; /* Limita a largura da lista */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a lista */
+}
+
+/* Estilizando os itens da lista */
+li {
+    padding: 10px 0; /* Espaçamento vertical entre os itens */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    border-bottom: 1px solid #ddd; /* Linha separadora entre os itens */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave de transição */
+}
+
+/* Efeito de hover para os itens */
+li:hover {
+    background-color: #4CAF50; /* Fundo verde quando o mouse passa */
+    color: rgb(191, 251, 176); /* Cor do texto muda para branco */
+    cursor: pointer; /* Muda o cursor para indicar interação */
 }
